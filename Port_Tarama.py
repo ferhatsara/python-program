@@ -14,6 +14,8 @@ Port Tarama Programına Hoş Geldiniz.
 --------------------2)Servis ve Versiyon Bilgisi-------------------
 --------------------3)İşletim Sistemi Bilgisi----------------------
 --------------------4)Agresif tarama-------------------------------
+--------------------5)Güvenlik Duvarı Tespiti----------------------
+--------------------6)Hızlı Tarama---------------------------------
 -------------------------------------------------------------------
 -------------------------------------------------------------------
 -------------------------*Ferhat SARA*-----------------------------
@@ -37,5 +39,11 @@ elif (islemno=="3"):
 elif (islemno=="4"):
 	hedefip=raw_input("Hedef İp Girin:  ")
 	os.system("nmap -A " + hedefip)
+elif (islemno=="5"):
+	hedefip=raw_input("Hedef İp Girin:  ")
+	os.system("nmap --script http-waf-detect " + hedefip)
+elif (islemno=="6"):
+	hedefip=raw_input("Hedef İp Girin:  ")
+	os.system("nmap -F " + hedefip)
 else:
 	print("Hatalı Seçim Yaptınız. Program Kapatılıyor.")
