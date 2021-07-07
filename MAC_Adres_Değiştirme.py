@@ -9,11 +9,15 @@ os.system("clear")
 os.system("figlet MAC Degistirme")
 
 print("""
-MAC Adres Değiştirme Programına Hoşgeldiniz.
+-------------------------MAC Adres Değiştirme Programına Hoşgeldiniz.------------------------
+---------------------------------------------------------------------------------------------
+-------------------------------1)MAC Adresi Random Belirleme---------------------------------
+-------------------------------2)MAC Adresi Elle Belirle-------------------------------------
+-------------------------------3)MAC Adresi Orjinale Döndür----------------------------------
+---------------------------------------------------------------------------------------------
+-------------------------------------Ferhat Sara---------------------------------------------
 
-1)MAC Adresi Random Belirleme
-2)MAC Adresi Elle Belirle 
-3)MAC Adresi Orjinale Döndür
+
 """)
 
 islemno=raw_input("İşlem No Girin:  ")
